@@ -2,18 +2,19 @@
 :root {
 
     --bg: #1e2529;
-	--dark-bg: #171d20;
+    --dark-bg: #171d20;
     --light-text: #bde6fb;
-	--grey-text: #556666;
-	--select: #2a3439;
+    --grey-text: #556666;
+    --select: #2a3439;
     --border: #273034;
-	--font: 'Open Sans', sans-serif;
+    --font: 'Open Sans', sans-serif;
 
 }
 
 
 body, button, input, select, textarea {
     font-family: var(--font);
+    color: #bde6fb !important;
 }
 
 .x-menu-container, .x-container, .x-aside-container {
@@ -411,3 +412,21 @@ element.style {
     z-index: 2473;
 }
 
+.el-table, .cell, .el-table__empty-text, .el-radio__input.is-disabled+span.el-radio__label, .el-checkbox, .el-collapse-item__header, .el-collapse-item__content {
+	color: var(--light-text);
+}
+
+.el-checkbox__input.is-checked, .el-checkbox__inner, .el-checkbox__input.is-indeterminate, .el-checkbox__inner {
+    background-color: var(--bg) !important;
+    border-color: var(--light-text) !important;
+}
+.el-checkbox__inner {
+	border: 1px solid var(--light-text) !important; 
+    background-color: var(--bg) !important;
+}
+
+.options-container, .sub-header, .p, .el-dialog__title {
+	color: var(--light-text);
+    font-weight: bold;
+    font-size: 15px;
+}
